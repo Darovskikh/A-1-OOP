@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaCount.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="Triangle.cs" />
     <None Include="Lesson.Counter.cs" />
     <None Include="Lesson.Shape.cs" />
     <None Include="Lesson.Transport.cs" />
