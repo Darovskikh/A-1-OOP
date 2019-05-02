@@ -11,5 +11,7 @@ namespace Advanced_Lesson_1_OOP
         private List< Product > Products { get; set; }
         private double TotalPrice { get; set; }
         private Promotion Promo { get; set; }
+        private Customer Customer { get; set; }
+        private List<Promotion> Promotions { get; set; }
     }
 }

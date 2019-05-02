@@ -13,5 +13,8 @@ namespace Advanced_Lesson_1_OOP
         public string PhoneNumber { get; private set; }
         public  string FullName { get;  private set; }
         public  string Adress { get; private set; }
+        private Cart Cart { get; set; }
+        private List <Order> Orders { get; set; }
+        
     }
 }

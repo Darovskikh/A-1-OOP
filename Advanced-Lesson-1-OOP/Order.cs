@@ -15,5 +15,6 @@ namespace Advanced_Lesson_1_OOP
         public string DeliveryAdress { get; private set; }
         public double OrderPrice { get; private set; }
         public List<Product> Products { get; private set; }
+        private Customer Customer { get;  set; }
     }
 }
