@@ -22,7 +22,23 @@ namespace Advanced_Lesson_1_OOP
             Transport winner = maserati;
             FuelCar firstPlace = (FuelCar)winner;
 
-        }   
+        }
+
+        public static void CheckFuelCar(FuelCar fc1, FuelCar fc2)
+        {
+            if (fc1 > fc2)
+            {
+                Console.WriteLine($"{fc1}>{fc2}");
+            }
+            else if (fc1 == fc2)
+            {
+                Console.WriteLine($"{fc1}={fc2}");
+            }
+            else
+            {
+                Console.WriteLine($"{fc1}<{fc2}");
+            }
+        }
     }
 
     public class Transport
