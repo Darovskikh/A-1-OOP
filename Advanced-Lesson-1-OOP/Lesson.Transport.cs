@@ -39,6 +39,7 @@ namespace Advanced_Lesson_1_OOP
         {
             this.Distance += km;
         }
+
     }
 
     public class Car : Transport
@@ -57,7 +58,35 @@ namespace Advanced_Lesson_1_OOP
             base.Move(km);
             this.Fuel -= km * FuelUsage / 100;
         }
+        public static bool operator == (FuelCar fc1, FuelCar fc2)
+        {
+            if (fc1.Engine == fc2.Engine)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator != (FuelCar fc1, FuelCar fc2)
+        {
+            if (fc1.Engine != fc2.Engine)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public static bool operator >(FuelCar fc1, FuelCar fc2)
+        {
+            return fc1.Engine > fc2.Engine;
+        }
+        public static bool operator <(FuelCar fc1, FuelCar fc2)
+        {
+            return fc1.Engine < fc2.Engine;
+        }
     }
+        
+
 
     public class ElectroCar : Car
     {
