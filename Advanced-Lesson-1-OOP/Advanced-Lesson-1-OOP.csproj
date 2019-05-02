@@ -42,15 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Rate.cs" />
     <None Include="Lesson.Counter.cs" />
     <None Include="Lesson.Shape.cs" />
     <None Include="Lesson.Transport.cs" />
+    <Compile Include="Directory\Appliances.cs" />
+    <Compile Include="Directory\AutoAndMoto.cs" />
+    <Compile Include="Directory\BeautyAndSport.cs" />
+    <Compile Include="Directory\BuildingAndRepair.cs" />
+    <Compile Include="Cart.cs" />
+    <Compile Include="Directory\ComputersAndNetwork.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Directory\Product.cs" />
+    <Compile Include="Directory\Electronics.cs" />
+    <Compile Include="Directory\HouseAndGarden.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Practice.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Promotion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
