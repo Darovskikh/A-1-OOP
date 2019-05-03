@@ -9,9 +9,12 @@ namespace Advanced_Lesson_1_OOP
     class BeautyAndSport : Product
     {
         public string KindOfSport { get; set; }
-        public bool ForWomen { get; set; }
-        public bool ForMen { get; set; }
-        public bool ForKids { get; set; }
+        public enum Target
+        {
+            Men = 2,
+            Women = 4,
+            Kids = 8
+        }
     }
     
 }
