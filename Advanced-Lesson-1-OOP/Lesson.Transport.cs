@@ -87,9 +87,9 @@ namespace Advanced_Lesson_1_OOP
         {
             if (fc1.Engine != fc2.Engine)
             {
-                return false;
+                return true;
             }
-            return true;
+            return false;
         }
 
         public static bool operator >(FuelCar fc1, FuelCar fc2)
