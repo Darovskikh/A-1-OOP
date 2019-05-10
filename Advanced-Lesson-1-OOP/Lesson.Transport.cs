@@ -22,7 +22,23 @@ namespace Advanced_Lesson_1_OOP
             Transport winner = maserati;
             FuelCar firstPlace = (FuelCar)winner;
 
-        }   
+        }
+
+        public static void CheckFuelCar(FuelCar fc1, FuelCar fc2)
+        {
+            if (fc1 > fc2)
+            {
+                Console.WriteLine($"{fc1}>{fc2}");
+            }
+            else if (fc1 == fc2)
+            {
+                Console.WriteLine($"{fc1}={fc2}");
+            }
+            else
+            {
+                Console.WriteLine($"{fc1}<{fc2}");
+            }
+        }
     }
 
     public class Transport
@@ -39,6 +55,7 @@ namespace Advanced_Lesson_1_OOP
         {
             this.Distance += km;
         }
+
     }
 
     public class Car : Transport
@@ -57,7 +74,35 @@ namespace Advanced_Lesson_1_OOP
             base.Move(km);
             this.Fuel -= km * FuelUsage / 100;
         }
+        public static bool operator == (FuelCar fc1, FuelCar fc2)
+        {
+            if (fc1.Engine == fc2.Engine)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator != (FuelCar fc1, FuelCar fc2)
+        {
+            if (fc1.Engine != fc2.Engine)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator >(FuelCar fc1, FuelCar fc2)
+        {
+            return fc1.Engine > fc2.Engine;
+        }
+        public static bool operator <(FuelCar fc1, FuelCar fc2)
+        {
+            return fc1.Engine < fc2.Engine;
+        }
     }
+        
+
 
     public class ElectroCar : Car
     {
